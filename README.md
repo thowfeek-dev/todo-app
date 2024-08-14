@@ -1,18 +1,18 @@
 ---
 
-# Todo App
+# 📝 Todo App
 
 A simple Todo application built with the MERN (MongoDB, Express.js, React.js, Node.js) stack.
 
-## Features
+## ✨ Features
 
-- **Add Tasks**: Easily add new tasks to your todo list.
-- **Edit Tasks**: Update task details with a simple edit option.
-- **Delete Tasks**: Remove completed or unnecessary tasks.
-- **Mark as Completed**: Keep track of what you've accomplished by marking tasks as completed.
-- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+- **➕ Add Tasks**: Easily add new tasks to your todo list.
+- **✏️ Edit Tasks**: Update task details with a simple edit option.
+- **❌ Delete Tasks**: Remove completed or unnecessary tasks.
+- **✅ Mark as Completed**: Keep track of what you've accomplished by marking tasks as completed.
+- **📱 Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
-## Installation
+## 🛠️ Installation
 
 To set up and run this project locally:
 
@@ -29,7 +29,7 @@ To set up and run this project locally:
    npm install
    ```
 
-## Usage
+## 🚀 Usage
 
 1. Start the development server:
    ```bash
@@ -37,11 +37,11 @@ To set up and run this project locally:
    ```
 2. Open your browser and go to `http://localhost:3000` to view the app.
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
