@@ -3,7 +3,7 @@ import { Book } from '../models/bookModel.js';
 
 const router = express.Router();
 
-// Route for Save a new Book
+// Route for Save a new Todo
 router.post('/', async (request, response) => {
   try {
     if (
@@ -30,7 +30,7 @@ router.post('/', async (request, response) => {
   }
 });
 
-// Route for Get All Books from database
+// Route for Get All Todo from database
 router.get('/', async (request, response) => {
   try {
     const books = await Book.find({});
@@ -45,7 +45,7 @@ router.get('/', async (request, response) => {
   }
 });
 
-// Route for Get One Book from database by id
+// Route for Get One Todo from database by id
 router.get('/:id', async (request, response) => {
   try {
     const { id } = request.params;
@@ -59,7 +59,7 @@ router.get('/:id', async (request, response) => {
   }
 });
 
-// Route for Update a Book
+// Route for Update a Todo
 router.put('/:id', async (request, response) => {
   try {
     if (
@@ -77,17 +77,17 @@ router.put('/:id', async (request, response) => {
     const result = await Book.findByIdAndUpdate(id, request.body);
 
     if (!result) {
-      return response.status(404).json({ message: 'Book not found' });
+      return response.status(404).json({ message: 'Todo not found' });
     }
 
-    return response.status(200).send({ message: 'Book updated successfully' });
+    return response.status(200).send({ message: 'Todo updated successfully' });
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
   }
 });
 
-// Route for Delete a book
+// Route for Delete a Todo
 router.delete('/:id', async (request, response) => {
   try {
     const { id } = request.params;
@@ -95,7 +95,7 @@ router.delete('/:id', async (request, response) => {
     const result = await Book.findByIdAndDelete(id);
 
     if (!result) {
-      return response.status(404).json({ message: 'Book not found' });
+      return response.status(404).json({ message: 'Todo not found' });
     }
 
     return response.status(200).send({ message: 'Book deleted successfully' });
