@@ -9,16 +9,16 @@ router.post('/', async (request, response) => {
     if (
       !request.body.todo ||
       !request.body.assigned ||
-      !request.body.publishYear
+      !request.body.reqTime
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: todo, assigned, publishYear',
+        message: 'Send all required fields: todo, assigned, reqTime',
       });
     }
     const newBook = {
       todo: request.body.todo,
       assigned: request.body.assigned,
-      publishYear: request.body.publishYear,
+      reqTime: request.body.reqTime,
     };
 
     const book = await Book.create(newBook);
@@ -65,10 +65,10 @@ router.put('/:id', async (request, response) => {
     if (
       !request.body.todo ||
       !request.body.assigned ||
-      !request.body.publishYear
+      !request.body.reqTime
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: todo, assigned, publishYear',
+        message: 'Send all required fields: todo, assigned, reqTime',
       });
     }
 

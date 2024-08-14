@@ -8,7 +8,7 @@ import { useSnackbar } from 'notistack';
 const CreateBooks = () => {
   const [todo, settodo] = useState('');
   const [assigned, setassigned] = useState('');
-  const [publishYear, setPublishYear] = useState('');
+  const [reqTime, setreqTime] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
@@ -17,7 +17,7 @@ const CreateBooks = () => {
     const data = {
       todo,
       assigned,
-      publishYear,
+      reqTime,
     };
     setLoading(true);
     axios
@@ -63,8 +63,8 @@ const CreateBooks = () => {
           <label className='text-xl mr-4 text-gray-500'>Req. Time</label>
           <input
             type='number'
-            value={publishYear}
-            onChange={(e) => setPublishYear(e.target.value)}
+            value={reqTime}
+            onChange={(e) => setreqTime(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

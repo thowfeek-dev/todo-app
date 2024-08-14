@@ -10,7 +10,7 @@ const todoSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    publishYear: {
+    reqTime: {
       type: Number,
       required: true,
     },
