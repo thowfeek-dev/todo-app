@@ -36,15 +36,15 @@ const ShowBook = () => {
             <span>{book._id}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Title</span>
-            <span>{book.title}</span>
+            <span className='text-xl mr-4 text-gray-500'>Todo Name</span>
+            <span>{book.todo}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Author</span>
+            <span className='text-xl mr-4 text-gray-500'>Assigned</span>
             <span>{book.author}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Publish Year</span>
+            <span className='text-xl mr-4 text-gray-500'>Req. Time</span>
             <span>{book.publishYear}</span>
           </div>
           <div className='my-4'>

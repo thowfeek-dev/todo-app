@@ -9,12 +9,12 @@ const BooksTable = ({ books }) => {
       <thead>
         <tr>
           <th className='border border-slate-600 rounded-md'>No</th>
-          <th className='border border-slate-600 rounded-md'>Title</th>
+          <th className='border border-slate-600 rounded-md'>Today's Todo List </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Author
+            Assigned
           </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Publish Year
+            Req. Time
           </th>
           <th className='border border-slate-600 rounded-md'>Operations</th>
         </tr>
@@ -26,7 +26,7 @@ const BooksTable = ({ books }) => {
               {index + 1}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
-              {book.title}
+              {book.todo}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.author}
