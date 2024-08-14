@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const bookSchema = mongoose.Schema(
+const todoSchema = mongoose.Schema(
   {
     todo: {
       type: String,
@@ -20,4 +20,4 @@ const bookSchema = mongoose.Schema(
   }
 );
 
-export const Book = mongoose.model('Book', bookSchema);
+export const Book = mongoose.model('Book', todoSchema);
