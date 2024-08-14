@@ -6,7 +6,7 @@ const todoSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    author: {
+    assigned: {
       type: String,
       required: true,
     },

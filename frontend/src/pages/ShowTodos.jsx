@@ -41,7 +41,7 @@ const ShowBook = () => {
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Assigned</span>
-            <span>{book.author}</span>
+            <span>{book.assigned}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Req. Time</span>
